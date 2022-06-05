@@ -15,7 +15,7 @@ const DSLeftNavFooter = () => (
         <img src={FigmaImg} alt="See Sketch UI Kit" />
       </a>
       <a
-        href="https://github.com/ogonzal87/oskrhq-design-system"
+        href="https://github.com/ogonzal87/oskrhq-ds"
         target="_blank"
         rel="noopener noreferrer"
         className="leftnav-resource"

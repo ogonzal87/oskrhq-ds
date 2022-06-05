@@ -17,7 +17,11 @@ const Contact = () => (
       <PContactPage className="og-contact-subheading">
         I created and maintain this System as a personal project but if you
         would like to consume it,{" "}
-        <a target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/ogonzal87/oskrhq-ds"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           just take a look at the code
         </a>
         .
