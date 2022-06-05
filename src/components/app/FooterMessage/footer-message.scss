@@ -1,0 +1,8 @@
+// @import "../../../styles/_styles.scss";
+
+.footer-text {
+  color: og-color(text, secondary);
+  position: absolute;
+  left: og-space(space-64);
+  bottom: $og-space-40;
+}

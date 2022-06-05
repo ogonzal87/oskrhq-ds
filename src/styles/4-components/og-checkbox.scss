@@ -1,0 +1,61 @@
+@import '../0-base/_base-dir.scss';
+@import '../1-themes/_themes-dir.scss';
+@import '../2-foundations/_foundations-dir.scss';
+
+.og-checkbox-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  user-select: none;
+
+  .og-checkbox {
+    cursor: pointer;
+    height: og-rem(44px);
+    width: og-rem(44px);
+    background: white;
+    border-radius: og-rem(15px);
+    border: og-rem(1px) solid og-color(text, primary);
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .og-checkmark {
+    cursor: pointer;
+    height: og-rem(20px);
+    width: og-rem(20px);
+    background-color: og-color(icon, default-on-dark);
+    border-radius: og-rem(2px);
+    border: og-rem(1px) solid og-color(text, link);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: og-color(icon, default-on-dark);
+    margin-right: $og-space-16;
+  }
+
+  .og-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+  .og-checkmark:after {
+    left: og-rem(9px);
+    top: og-rem(5px);
+  }
+
+  input[type=checkbox]:checked ~ .og-checkmark {
+    background: og-color(background, brand);
+  }
+
+  input[type=checkbox]:checked ~ .og-checkmark:after {
+    display: block;
+  }
+
+  input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+}

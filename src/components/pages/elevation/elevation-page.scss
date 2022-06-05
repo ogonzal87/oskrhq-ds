@@ -1,0 +1,71 @@
+// @import "../../../styles/_styles.scss";
+
+.elevation-page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: $og-space-32;
+  grid-row-gap: $og-space-32;
+  justify-items: center;
+  padding: $og-space-24;
+}
+
+.elevation-page-grid .specimen-container {
+  @include og-text-style-caption();
+  @include og-align-vertically();
+}
+
+.elevation-specimen {
+  width: og-space(space-160);
+  height: og-space(space-160);
+  transition: all og-duration(slowest) og-easing(base);
+}
+
+.elevation-000 {
+  box-shadow: og-elevation(000);
+}
+
+.elevation-100 {
+  box-shadow: og-elevation(100);
+
+  &:hover {
+    box-shadow: og-elevation(000);
+    cursor: pointer;
+  }
+}
+
+.elevation-200 {
+  box-shadow: og-elevation(200);
+
+  &:hover {
+    box-shadow: og-elevation(000);
+    cursor: pointer;
+  }
+}
+
+.elevation-300 {
+  box-shadow: og-elevation(300);
+
+  &:hover {
+    box-shadow: og-elevation(000);
+    cursor: pointer;
+  }
+}
+
+.elevation-400 {
+  box-shadow: og-elevation(400);
+
+  &:hover {
+    box-shadow: og-elevation(000);
+    cursor: pointer;
+  }
+}
+
+.elevation-500 {
+  box-shadow: og-elevation(500);
+
+  &:hover {
+    box-shadow: og-elevation(000);
+    cursor: pointer;
+  }
+}
+

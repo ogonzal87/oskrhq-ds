@@ -1,0 +1,25 @@
+// @import "../../../styles/_styles.scss";
+
+.og-contact-subheading {
+  width: 100%;
+  color: og-color(text, secondary);
+  margin-bottom: 100px;
+  line-height: $og-space-40;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.og-contact-presentation-pic-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.og-contact-presentation-pic {
+  border-radius: 4px;
+  width: 700px;
+  margin: 0 auto;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 67% 100%, 0 100%);
+  box-shadow: og-elevation(500);
+}

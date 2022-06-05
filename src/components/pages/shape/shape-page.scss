@@ -1,0 +1,52 @@
+// @import "../../../styles/_styles.scss";
+
+.shape-page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: $og-space-32;
+  grid-row-gap: $og-space-32;
+  justify-items: center;
+  padding: $og-space-24;
+}
+
+.shape-specimen {
+  padding: $og-space-08;
+}
+
+.shape-page-grid .specimen-container {
+  width: 100%;
+  @include og-text-style-caption();
+  @include og-align-vertically();
+}
+
+.shape-primary {
+  @include og-border(thick, primary, solid);
+  border-radius: og-shape(primary, default);
+}
+
+.shape-secondary {
+  @include og-border(thick, primary, solid);
+  border-radius: og-shape(secondary, default);
+}
+
+.shape-tertiary {
+  @include og-border(thick, primary, solid);
+  border-radius: og-shape(tertiary, default);
+}
+
+.shape-quaternary {
+  @include og-border(thick, primary, solid);
+  border-radius: og-shape(quaternary, default);
+}
+
+.shape-squared {
+  @include og-border(thick, primary, solid);
+  border-radius: og-shape(squared, default);
+}
+
+.shape-circle {
+  @include og-border(thick, primary, solid);
+  border-radius: og-shape(circle, default);
+  height: 200px;
+  width: 200px;
+}

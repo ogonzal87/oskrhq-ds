@@ -1,0 +1,37 @@
+/// Returns the color value for a given color name and group.
+///
+/// @param {String} $category - The color's type.
+/// @param {Number} $type - The darkness/lightness of the color. Defaults to base. The higher the number, the darker the color.
+/// @return {Color} The color value.
+
+@function og-color($category, $type) {
+  $fetched-color: map-get(map-get($og-color-data, $category), $type);
+
+  @if map-has-key($og-color-data, $fetched-color) {
+    $fetched-color: map-get(map-get($og-color-data, $fetched-color), $type);
+  }
+
+  @if type-of($fetched-color) == color {
+    @return $fetched-color;
+  } @else {
+    @error 'Color `#{$category} - #{$type}` not found. Available colors: #{$og-color-data}';
+  }
+}
+
+
+/// Returns a foreground color based on a given background-color in accordance with accessibility standards.
+///
+/// @param {Color} $background-color - The background color where the foreground will sit.
+/// @param {Color} $dark-color - The dark color you wish to display if there is enough contrast.
+/// @param {Color} $light-color - The light color you wish to display if there is enough contrast.
+/// @return {Color} The HEX color of the foreground.
+// @function og-color-contrast($background-color, $dark-color: og-color(black, 90), $light-color: og-color(white, 100)) {
+//   @if $background-color == null {
+//     @return null;
+//   } @else {
+//     // Based on the algorithm recommended by W3: https://www.w3.org/TR/AERT/#color-contrast
+//     $yiq: (red($background-color) * 299 + green($background-color) * 587 + blue($background-color) * 114) / 1000;
+//     @return if($yiq >= 128, $dark-color, $light-color);
+//   }
+// }
+

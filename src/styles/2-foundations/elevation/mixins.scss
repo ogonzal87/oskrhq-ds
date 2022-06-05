@@ -1,0 +1,5 @@
+@mixin og-depth($depth: 100) {
+  -webkit-box-shadow: og-depth($depth);
+  -moz-box-shadow: og-depth($depth);
+  box-shadow: og-depth($depth);
+}

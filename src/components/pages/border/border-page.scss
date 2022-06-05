@@ -1,0 +1,59 @@
+// @import "../../../styles/_styles.scss";
+$specimen-on-dark-background: og-color(background, canvas-on-dark);
+
+.border-page-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: $og-space-16;
+  grid-row-gap: $og-space-16;
+}
+
+.border-specimen {
+  padding: $og-space-08;
+  width: $og-space-96;
+  height: $og-space-96;
+  border-radius: og-shape(secondary, default);
+  @include og-text-style-caption();
+}
+
+.border-specimen-on-dark {
+  width: $og-space-128;
+  height: $og-space-128;
+  background: $specimen-on-dark-background;
+  @include og-center();
+  color: og-color(text, primary-on-dark);
+}
+
+//borders
+.border-thin {
+  @include og-border(thin, primary-darker, solid);
+  @include og-align-vertically();
+}
+.border-thin-on-dark {
+  @include og-border(thin, primary-on-dark, solid);
+  @include og-align-vertically();
+}
+
+.border-thick {
+  @include og-border(thick, primary-darker, solid);
+  @include og-align-vertically();
+}
+.border-thick-on-dark {
+  @include og-border(thick, primary-on-dark, solid);
+  @include og-align-vertically();
+}
+
+.border-thicker {
+  @include og-border(thicker, primary-darker, solid);
+  @include og-align-vertically();
+}
+.border-thicker-on-dark {
+  @include og-border(thicker, primary-on-dark, solid);
+}
+
+.border-thickest {
+  @include og-border(thickest, primary-darker, solid);
+}
+.border-thickest-on-dark {
+  @include og-border(thickest, primary-on-dark, solid);
+}

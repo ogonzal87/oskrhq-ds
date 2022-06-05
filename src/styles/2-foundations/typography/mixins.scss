@@ -1,0 +1,140 @@
+
+/// Returns desired styles for a given typography style.
+///
+/// @param {String} $weight - light, regular, semibold, bold.
+
+@mixin og-text-style-heading1($weight: light) {
+  font-size:   og-font-size(heading1);
+  line-height: og-line-height(heading1);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(heading1);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin og-text-style-heading2($weight: light) {
+  font-size:   og-font-size(heading2);
+  line-height: og-line-height(heading2);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(heading2);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin og-text-style-heading3($weight: regular) {
+  font-size:   og-font-size(heading3);
+  line-height: og-line-height(heading3);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(heading3);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin og-text-style-heading4($weight: regular) {
+  font-size:   og-font-size(heading4);
+  line-height: og-line-height(heading4);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(heading4);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin og-text-style-heading5($weight: regular) {
+  font-size:   og-font-size(heading5);
+  line-height: og-line-height(heading5);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(heading5);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin og-text-style-heading6($weight: semibold) {
+  font-size:   og-font-size(heading6);
+  line-height: og-line-height(heading6);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(heading6);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin og-text-style-subtitle2($weight: semibold) {
+  font-size:   og-font-size(subtitle2);
+  line-height: og-line-height(subtitle2);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(subtitle2);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin og-text-style-subtitle1($weight: regular) {
+  font-size:   og-font-size(subtitle1);
+  line-height: og-line-height(subtitle1);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(subtitle1);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin og-text-style-body2($weight: regular) {
+  font-size:   og-font-size(body2);
+  line-height: og-line-height(body2);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(body2);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin og-text-style-body1($weight: regular) {
+  font-size:   og-font-size(body1);
+  line-height: og-line-height(body1);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(body1);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin og-text-style-caption($weight: regular) {
+  font-size:   og-font-size(caption);
+  line-height: og-line-height(caption);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(caption);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin og-text-style-overline($weight: regular) {
+  font-size:   og-font-size(overline);
+  line-height: og-line-height(overline);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(overline);
+  text-transform: uppercase;
+  color: og-color(text, secondary);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin og-text-style-link($weight: regular) {
+  line-height: og-line-height(link);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(link);
+  text-rendering: optimizeLegibility;
+
+  a {
+    text-decoration: underline;
+    text-rendering: optimizeLegibility;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@mixin og-text-style-list($weight: regular) {
+  font-size:   og-font-size(list);
+  line-height: og-line-height(list);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(list);
+  text-rendering: optimizeLegibility;
+}

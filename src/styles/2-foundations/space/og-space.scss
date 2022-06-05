@@ -1,0 +1,58 @@
+@import '../../0-base/_base-dir.scss';
+@import '../../1-themes/_themes-dir.scss';
+
+$og-space-01:  og-rem(1px); // 1px
+$og-space-02:  og-rem(2px); // 2px
+$og-space-04:  og-rem(4px); // 4px
+$og-space-08:  og-rem(8px); // 8px
+$og-space-12:  og-rem(12px); // 12px
+$og-space-16:  og-rem(16px); // 16px
+$og-space-20:  og-rem(20px); // 20px
+$og-space-24:  og-rem(24px); // 24px
+$og-space-32:  og-rem(32px); // 32px
+$og-space-40:  og-rem(40px); // 40px
+$og-space-48:  og-rem(48px); // 48px
+$og-space-64:  og-rem(64px);  // 64px
+$og-space-80:  og-rem(80px);  // 80px
+$og-space-96:  og-rem(96px);  // 96px
+$og-space-128: og-rem(128px); // 128px
+$og-space-160: og-rem(160px); // 160px
+
+$og-spacing-data: (
+  none: 0,
+  space-01: $og-space-01, 
+  space-02: $og-space-02,
+  space-04: $og-space-04,
+  space-08: $og-space-08,
+  space-12: $og-space-12,
+  space-16: $og-space-16,
+  space-20: $og-space-20,
+  space-24: $og-space-24,
+  space-32: $og-space-32,
+  space-40: $og-space-40,
+  space-48: $og-space-48,
+  space-64: $og-space-64,
+  space-80: $og-space-80,
+  space-96: $og-space-96,
+  space-128: $og-space-128,
+  space-160: $og-space-160,
+) !default;
+
+$og-container-inset: (
+  s:  (
+    dense: $og-space-04 $og-space-08, // 4px 8px
+    default: $og-space-08,                // 8px
+    open: $og-space-12 $og-space-08   // 12px 8px
+  ),
+  m:  (
+    dense: $og-space-08 $og-space-16, // 8px 16px
+    default: $og-space-16,                // 16px
+    open: $og-space-24 $og-space-16  // 24px 16px
+  ),
+  l:  (
+    dense: $og-space-12 $og-space-24, // 12px 24px
+    default: $og-space-24,                // 24px
+    open: $og-space-32 $og-space-24  // 32px 24px
+  ),
+) !default;
+

@@ -1,0 +1,41 @@
+/// Returns the duration value for a given variant.
+///
+/// @param {String} $variant - The key for the given variant.
+/// @return {Number} The spacing for the variant (in milliseconds).
+
+@function og-duration($variant: base) {
+  $fetched-value: map-get($og-duration-data, $variant);
+
+  @if type-of($fetched-value) == number {
+    @return $fetched-value;
+  } @else {
+    @error 'Duration variant `#{$variant}` not found. Available variants: #{$og-duration-data}';
+  }
+}
+
+/// Returns the timing-function value for a given variant.
+///
+/// @param {String} $variant - The key for the given variant.
+/// @return {String} The cubic-bezier function (string) for the variant.
+@function og-easing($variant: base) {
+  $fetched-value: map-get($og-easing-data, $variant);
+  @if type-of($fetched-value) == string {
+    @return $fetched-value;
+  } @else {
+    @error 'Easing variant `#{$variant}` not found. Available variants: #{$og-easing-data}';
+  }
+}
+
+
+/// Returns the timing-function value for a given variant.
+///
+/// @param {String} $variant - The key for the given variant.
+/// @return {String} The animation delay (number) for the variant.
+@function og-delay($variant: base) {
+  $fetched-value: map-get($og-delay-data, $variant);
+  @if type-of($fetched-value) == number {
+    @return $fetched-value;
+  } @else {
+    @error 'Delay variant `#{$variant}` not found. Available variants: #{$og-delay-data}';
+  }
+}

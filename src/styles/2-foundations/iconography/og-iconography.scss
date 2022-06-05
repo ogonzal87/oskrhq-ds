@@ -1,0 +1,18 @@
+@import '../../0-base/_base-dir.scss';
+@import '../../1-themes/_themes-dir.scss';
+
+$og-icon-xsmall: og-space(space-12);
+$og-icon-small: og-space(space-16);
+$og-icon-medium: og-space(space-24);
+$og-icon-large: og-space(space-32);
+$og-icon-xlarge: og-space(space-40);
+$og-icon-xxlarge: og-space(space-48);
+
+$og-iconography-size: (
+  xsmall: $og-icon-xsmall,
+  small: $og-icon-small,
+  medium: $og-icon-medium,
+  large: $og-icon-large,
+  xlarge: $og-icon-xlarge,
+  xxlarge: $og-icon-xxlarge,
+)

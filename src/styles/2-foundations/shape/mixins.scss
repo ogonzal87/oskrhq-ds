@@ -1,0 +1,27 @@
+@mixin og-shape($size: medium, $type: default) {
+  border-radius: og-shape($size, $type);
+}
+
+@mixin og-shape-container-surface($width: 100, $color: primary, $radius: brick, $background: canvas ) {
+  border-radius: og-shape($radius, default);
+  border: og-border($width, $color, solid);
+  background: og-color(background, $background);
+}
+
+@mixin og-shape-container-canvas($width: 100, $color: primary, $radius: brick, $background: canvas ) {
+  border-radius: og-shape($radius, default);
+  border: og-border($width, $color, solid);
+  background: og-color(background, $background);
+}
+
+@mixin og-shape-container-canvas-shaded($width: 100, $color: primary, $radius: brick, $background: canvas-shaded ) {
+  border-radius: og-shape($radius, default);
+  border: og-border($width, $color, solid);
+  background: og-color(background, $background);
+}
+
+@mixin og-shape-container-on-dark($width: 100, $color: primary, $radius: brick, $background: canvas ) {
+  border-radius: og-shape($radius, default);
+  border: og-border($width, $color, solid);
+  background: og-color(background, $background);
+}

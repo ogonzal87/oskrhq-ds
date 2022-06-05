@@ -1,0 +1,97 @@
+/**
+OSKRHQ.DS Default Theme
+Hi! 👋🏼
+Below, you will find the default theme for this Design System. 
+However, you can modify the theme's styling values with your own
+and what the UI change magically!
+*/
+
+
+/**
+Color Palette Light
+Change these color values below to your brand colors.
+You can use `null` as a value if you do not have 
+that color.
+*/
+
+// Brand - Primary
+$og-theme-color-primary-70: #300661;
+$og-theme-color-primary-60: #3A007F;
+$og-theme-color-primary-50: #4C00B8;
+$og-theme-color-primary-40: #5900FF; // 5900FF
+$og-theme-color-primary-30: #B9A3FA;
+$og-theme-color-primary-20: #B9A3FA;
+$og-theme-color-primary-10: #B9A3FA;
+
+// Brand - Secondary 
+$og-theme-color-secondary-70: #FF00FF;
+$og-theme-color-secondary-60: #ff24ff;
+$og-theme-color-secondary-50: #ff49ff;
+$og-theme-color-secondary-40: #ff6dff;
+$og-theme-color-secondary-30: #ff92ff;
+$og-theme-color-secondary-20: #ffb6ff;
+$og-theme-color-secondary-10: #ffdbff;
+
+// Brand - Tertiary 
+$og-theme-color-tertiary-70: #00FFF0;
+$og-theme-color-tertiary-60: #24fff2;
+$og-theme-color-tertiary-50: #49fff4;
+$og-theme-color-tertiary-40: #6dfff6;
+$og-theme-color-tertiary-30: #92fff9;
+$og-theme-color-tertiary-20: #b6fffb;
+$og-theme-color-tertiary-10: #dbfffd;
+
+//Neutral - Used for text, borders, shadows, background, etc
+$og-theme-color-neutral-70: #2F3946;
+$og-theme-color-neutral-60: #828890;
+$og-theme-color-neutral-50: #697489;
+$og-theme-color-neutral-40: #C0C3C7;
+$og-theme-color-neutral-30: #E0E2E4;
+$og-theme-color-neutral-20: #EAEBEC;
+$og-theme-color-neutral-10: #FFFFFF;
+
+// positive - Used to communicate status or feedback to the user
+// For the color curve check: http://www.colorbox.io/#steps=6#hue_start=135#hue_end=121#hue_curve=easeInOutQuad#sat_start=26#sat_end=82#sat_curve=easeOutQuad#sat_rate=130#lum_start=98#lum_end=38#lum_curve=easeInOutQuad#lock_hex=057642#minor_steps_map=0 
+$og-theme-color-positive-70: #006102;
+$og-theme-color-positive-60: #057642;
+$og-theme-color-positive-50: #0c9b53;
+$og-theme-color-positive-40: #2acf78;
+$og-theme-color-positive-30: #63f1a0;
+$og-theme-color-positive-20: #84f6aa;
+$og-theme-color-positive-10: #a5fabb;
+
+// Negative - Used to communicate status or feedback to the user
+// For the color curve check: http://www.colorbox.io/#steps=6#hue_start=359#hue_end=359#hue_curve=easeInOutQuad#sat_start=10#sat_end=90#sat_curve=easeOutQuad#sat_rate=130#lum_start=100#lum_end=48#lum_curve=easeOutQuad#lock_hex=cc1016#minor_steps_map=0
+$og-theme-color-negative-70: #7a0002;
+$og-theme-color-negative-60: #a8070b;
+$og-theme-color-negative-50: #cc1016;
+$og-theme-color-negative-40: #e6373c;
+$og-theme-color-negative-30: #f68184;
+$og-theme-color-negative-20: #faafb0;
+$og-theme-color-negative-10: #ffdede; 
+
+// Warning - Used to communicate status or feedback to the user
+$og-theme-color-warning-70: #654E1A;
+$og-theme-color-warning-60: #987627;
+$og-theme-color-warning-50: #D8A737;
+$og-theme-color-warning-40: #FEC541;
+$og-theme-color-warning-30: #FECD5D;
+$og-theme-color-warning-20: #FEDC8D;
+$og-theme-color-warning-10: #FEE7B3;
+// Info - Used to communicate status or feedback to the user
+// For the color curve check: http://www.colorbox.io/#steps=11#hue_start=216#hue_end=257#hue_curve=easeInQuad#sat_start=4#sat_end=90#sat_curve=easeOutQuad#sat_rate=130#lum_start=100#lum_end=62#lum_curve=easeOutQuad#lock_hex=0a66c2#minor_steps_map=0
+$og-theme-color-info-70: #001cba;
+$og-theme-color-info-60: #0037bf;
+$og-theme-color-info-50: #004ec2;
+$og-theme-color-info-40: #0a66c2;
+$og-theme-color-info-30: #3181d1;
+$og-theme-color-info-20: #63a0df;
+$og-theme-color-info-10: #9fc3eb;
+
+// **TYPOGRAPHY**
+// Typeface
+// Change the typeface.
+// Import whatever Font Family you would like.
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+$og-theme-font-family: "Anonymous Pro", monospace;
+$og-theme-base-font-size: 16px;

@@ -1,0 +1,19 @@
+// Design System
+@import './0-base/_base-dir.scss';
+@import './1-themes/_themes-dir.scss';
+@import './2-foundations/_foundations-dir.scss';
+@import './3-application/_application-dir.scss';
+@import './4-components/_components-dir.scss';
+
+//pages
+@import '../components/pages/_home/home-page.scss';
+@import '../components/pages/color/color-page.scss';
+@import '../components/pages/typography/typography-page.scss';
+@import '../components/pages/spacing/spacing-page.scss';
+@import '../components/pages/border/border-page.scss';
+@import '../components/pages/motion/motion-page.scss';
+@import '../components/pages/playground/playground-page.scss';
+@import '../components/pages/layout/layout-page.scss';
+@import '../components/pages/elevation/elevation-page.scss';
+@import '../components/pages/iconography/iconography-page.scss';
+@import '../components/pages/shape/shape-page.scss';

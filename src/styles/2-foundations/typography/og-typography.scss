@@ -1,0 +1,66 @@
+@import '../../0-base/_base-dir.scss';
+@import '../../1-themes/_themes-dir.scss';
+
+$og-text-font-family: $og-theme-font-family;
+$og-text-base-font-size: $og-theme-base-font-size;
+
+// Data for each Type Style defined in the Style Sheet.
+$og-font-size-data: (
+  heading1: og-rem(96px),
+  heading2: og-rem(60px),
+  heading3: og-rem(48px),
+  heading4: og-rem(34px),
+  heading5: og-rem(24px), 
+  heading6: og-rem(20px),
+  subtitle2: og-rem(14px),
+  subtitle1: og-rem(16px),
+  body2: og-rem(14px),
+  body1: og-rem(16px),
+  caption: og-rem(13.712px),
+  overline: og-rem(13.712px),
+  list: og-rem(16px)
+) !default;
+
+// Data for each Type Style defined in the Style Sheet.
+$og-line-height-data: (
+  heading1: normal,
+  heading2: normal,
+  heading3: normal,
+  heading4: normal,
+  heading5: normal,
+  heading6: normal,
+  subtitle2: 1.6rem,
+  subtitle1: 1.6rem,
+  body2: 1.5rem,
+  body1: 1.5rem,
+  caption: 1.5rem,
+  overline: 1.5rem,
+  link: 1.5rem,
+  list: 1.5rem
+) !default;
+
+// Data for each Type Style defined in the Style Sheet.
+$og-letter-spacing-data: (
+  heading1: -1.5px,
+  heading2: -0.5px,
+  heading3: 0,
+  heading4: .25px,
+  heading5: 0,
+  heading6: .15px,
+  subtitle2:  .1px,
+  subtitle1: .15px,
+  body2: .7px,
+  body1: .7px,
+  caption: .4px,
+  overline: 1px,
+  link: 0,
+  list: 0
+) !default;
+
+// Data for each Type Style defined in the Style Sheet.
+$og-font-weight-data: (
+  bold: 600,
+  semibold: 500,
+  regular: 400,
+  light: 300
+) !default;

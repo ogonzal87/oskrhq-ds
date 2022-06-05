@@ -1,0 +1,14 @@
+/// Returns the border-weight value for a given variant.
+///
+/// @param {String} $variant - The key for the given variant.
+/// @return {Number} The spacing for the variant (in milliseconds).
+
+@function og-border-weight($variant: thin) {
+  $fetched-value: map-get($og-border-weight-data, $variant);
+
+  @if type-of($fetched-value) == number {
+    @return $fetched-value;
+  } @else {
+    @error 'border-weight variant `#{$variant}` not found. Available variants: #{$og-border-weight-data}';
+  }
+}

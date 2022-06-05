@@ -1,0 +1,80 @@
+.og-inset-container-s-dense {
+  padding: og-container-inset(s, dense);
+  margin: 0;
+
+  &:p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+  }
+}
+
+.og-inset-container-s-default {
+  padding: og-container-inset(s, default);
+  margin: 0;
+
+  &:p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+  }
+}
+
+.og-inset-container-s-open {
+  padding: og-container-inset(s, open);
+  margin: 0;
+
+  &:p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+  }
+}
+
+.og-inset-container-m-dense {
+  padding: og-container-inset(m, dense);
+  margin: 0;
+
+  &:p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+  }
+}
+
+.og-inset-container-m-default {
+  padding: og-container-inset(m, default);
+  margin: 0;
+
+  &:p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+  }
+}
+
+.og-inset-container-m-open {
+  padding: og-container-inset(m, open);
+  margin: 0;
+
+  &:p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+  }
+}
+
+.og-inset-container-l-dense {
+  padding: og-container-inset(l, dense);
+  margin: 0;
+
+  &:p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+  }
+}
+
+.og-inset-container-l-default {
+  padding: og-container-inset(l, default);
+  margin: 0;
+
+  &:p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+  }
+}
+
+.og-inset-container-l-open {
+  padding: og-container-inset(l, open);
+  margin: 0;
+
+  &:p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+  }
+}

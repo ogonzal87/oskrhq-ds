@@ -1,0 +1,138 @@
+// @import "../../../styles/_styles.scss";
+
+
+$specimen-component-color: $og-theme-color-negative-20;
+
+.item-spacing-main-container {
+  h1 {
+    margin: 0;
+  }
+}
+
+.item-spacing-list {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+
+  .item-spacing-list__item {
+    flex-direction: column;
+    margin-bottom: $og-space-32;
+
+    code {
+      font-size: og-font-size(caption);
+      color: og-color(text, secondary)
+    }
+
+    .item-spacing-list__item_specimen1 {
+      background: $specimen-component-color;
+      height: $og-space-01;
+      width: $og-space-01;
+    }
+
+    .item-spacing-list__item_specimen2 {
+      background: $specimen-component-color;
+      height: $og-space-02;
+      width: $og-space-02;
+    }
+
+    .item-spacing-list__item_specimen3 {
+      background: $specimen-component-color;
+      height: $og-space-04;
+      width: $og-space-04;
+    }
+
+    .item-spacing-list__item_specimen4 {
+      background: $specimen-component-color;
+      height: $og-space-08;
+      width: $og-space-08;
+    }
+
+    .item-spacing-list__item_specimen5 {
+      background: $specimen-component-color;
+      height: $og-space-12;
+      width: $og-space-12;
+    }
+
+    .item-spacing-list__item_specimen6 {
+      background: $specimen-component-color;
+      height: $og-space-16;
+      width: $og-space-16;
+    }
+
+    .item-spacing-list__item_specimen7 {
+      background: $specimen-component-color;
+      height: $og-space-20;
+      width: $og-space-20;
+    }
+
+    .item-spacing-list__item_specimen8 {
+      background: $specimen-component-color;
+      height: $og-space-24;
+      width: $og-space-24;
+    }
+
+    .item-spacing-list__item_specimen9 {
+      background: $specimen-component-color;
+      height: $og-space-32;
+      width: $og-space-32;
+    }
+
+    .item-spacing-list__item_specimen10 {
+      background: $specimen-component-color;
+      height: $og-space-40;
+      width: $og-space-40;
+    }
+
+    .item-spacing-list__item_specimen11 {
+      background: $specimen-component-color;
+      height: $og-space-48;
+      width: $og-space-48;
+    }
+
+    .item-spacing-list__item_specimen12 {
+      background: $specimen-component-color;
+      height: $og-space-64;
+      width: $og-space-64;
+    }
+
+    .item-spacing-list__item_specimen13 {
+      background: $specimen-component-color;
+      height: $og-space-80;
+      width: $og-space-80;
+    }
+
+    .item-spacing-list__item_specimen14 {
+      background: $specimen-component-color;
+      height: $og-space-96;
+      width: $og-space-96;
+    }
+
+    .item-spacing-list__item_specimen15 {
+      background: $specimen-component-color;
+      height: $og-space-128;
+      width: $og-space-128;
+    }
+
+    .item-spacing-list__item_specimen16 {
+      background: $specimen-component-color;
+      height: $og-space-160;
+      width: $og-space-160;
+    }
+  }
+}
+
+.item-spacing-showcase-section {
+  max-width: 1020px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($og-space-160 * 2, 1fr));
+  grid-column-gap: $og-space-16;
+  grid-row-gap: $og-space-40;
+  padding: $og-space-160 $og-space-40;
+  margin: 0 auto;
+
+  @media screen and (max-width: 375px) {
+    padding: $og-space-48 $og-space-20;
+  }
+}
+
+

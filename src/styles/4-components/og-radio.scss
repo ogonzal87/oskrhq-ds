@@ -1,0 +1,57 @@
+.og-radio-container {
+  display: flex;
+  position: relative;
+  padding-left: og-rem(35px);
+  margin-bottom: $og-space-12;
+  cursor: pointer;
+  font-size: og-rem(22px);
+  user-select: none;
+
+  input[type="radio"] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+
+  .og-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: $og-space-20;
+    width: $og-space-20;
+    background: white;
+    border: og-color(border, brand) og-rem(1px) solid;
+    box-sizing: border-box;
+    border-radius: 50%;
+  }
+
+  /* When the radio button is checked, add a blue background */
+  input[type="radio"]:checked ~ .og-radio {
+    background: og-color(background, brand);
+  }
+
+  .og-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 6px;
+    left: 6px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+  }
+
+  input[type="radio"]:checked ~ .og-radio:after {
+    display: block;
+  }
+
+  .og-radio:after {
+    top: 6px;
+    left: 6px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: og-color(background, canvas);
+  }
+}

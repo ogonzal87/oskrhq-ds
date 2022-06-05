@@ -1,0 +1,51 @@
+@import '../0-base/_base-dir.scss';
+@import '../1-themes/_themes-dir.scss';
+@import '../2-foundations/_foundations-dir.scss';
+
+.og-switch-container {
+  max-width: og-rem(52px);
+  
+  .og-switch-nob {
+    cursor: pointer;
+    height: og-rem(31px);
+    width: og-rem(49px);
+    background: white;
+    border-radius: og-rem(15px);
+    border: og-rem(1px) solid og-color(border, brand);
+    box-sizing: border-box;
+    position: relative;
+
+    &:before {
+      content: '';
+      cursor: pointer;
+      height: og-rem(27px);
+      width: og-rem(27px);
+      border-radius: 50%;
+      background: white;
+      border: og-rem(1px) solid og-color(border, brand);
+      box-sizing: border-box;
+      left: og-rem(1px);
+      top: og-rem(1px);
+      box-shadow: og-elevation(100);
+      position: absolute;
+      transition: all og-duration(base) og-easing(base);
+      max-width: og-rem(30px);
+    }
+  }
+
+  input[type=checkbox]:checked + .og-switch-nob:before {
+    top: og-rem(2px);
+    left: og-rem(20px);
+  }
+
+  input[type=checkbox]:checked + .og-switch-nob {
+    border: 0; 
+    background: og-color(background, brand);
+  }
+
+  input[type=checkbox] {
+    height: og-rem(0);
+    width: og-rem(0);
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,711 @@
+@import '../0-base/_base-dir.scss';
+@import '../1-themes/_themes-dir.scss';
+@import '../2-foundations/_foundations-dir.scss';
+
+$og-button-m-padding: $og-space-16;
+$og-button-s-padding: $og-space-08;
+$og-button-border: none;
+$og-button-shape: og-shape(secondary, default);
+$og-button-transitions: all og-duration(base) og-easing(base);
+
+// Primary Button
+$og-button-primary-background-color: og-color(background, brand);
+$og-button-primary-text-color: og-color(text, primary-on-dark);
+$og-button-primary-text-color--hover: og-color(text, link);
+$og-button-primary-background-color--hover: og-color(background, brand-hover);
+$og-button-primary-background-color--focused: og-color(background, brand-focused);
+
+// Secondary Button
+$og-button-secondary-background-color: transparent;
+$og-button-secondary-background-color--hover: og-color(background, canvas-tinted);
+$og-button-secondary-background-color--focused: og-color(background, canvas-tinted);
+$og-button-secondary-text-color: og-color(text, link);
+$og-button-secondary-text-color--hover: og-color(text, link);
+$og-button-secondary-text-color--focused: og-color(text, link-focused);
+
+// Posistive Button
+$og-button-positive-background-color: og-color(background, positive);
+$og-button-positive-background-color--hover: og-color(background, positive-hover);
+$og-button-positive-background-color--focused: og-color(background, positive-focused);
+$og-button-positive-text-color: og-color(text, primary-on-dark);
+
+// // Danger Button
+$og-button-negative-background-color: og-color(background, negative);
+$og-button-negative-background-color--hover: og-color(background, negative-hover);
+$og-button-negative-background-color--focused: og-color(background, negative-focused);
+$og-button-negative-text-color: og-color(text, primary-on-dark);
+
+// // Info Button
+$og-button-info-background-color: og-color(background, info);
+$og-button-info-text-color: og-color(text, primary-on-dark);
+$og-button-info-background-color--hover: og-color(background, info-hover);
+$og-button-info-background-color--focused: og-color(background, info-focused);
+
+// // Ghost Button
+$og-button-ghost-background-color: transparent;
+$og-button-ghost-background-color--hover: og-color(background, canvas-tinted);
+$og-button-ghost-background-color--focused: og-color(background, canvas-tinted);;
+$og-button-ghost-text-style: underline;
+$og-button-ghost-text-color: og-color(text, link);
+
+
+// Text buttons
+
+.og-button {
+  border-radius: $og-button-shape;
+  border: $og-button-border;
+  transition: $og-button-transitions;
+  text-align: center;
+  cursor: pointer;
+  transition: all og-easing(base) og-duration(base);
+  white-space: normal;
+  hyphens: auto;
+  font-weight: og-font-weight(bold) !important;
+  display: center;
+  align-items: center;
+  justify-content: center;
+
+  &:hover, &:focus {
+    box-shadow: og-elevation(100);
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.og-button--primary {
+  @extend .og-button;
+  color: $og-button-primary-text-color;
+  background: $og-button-primary-background-color;
+
+  &:hover {
+    background: $og-button-primary-background-color--hover;
+    color: $og-button-primary-text-color--hover !important;
+  }
+
+  &:focus, &:active {
+    background: $og-button-primary-background-color--focused;
+    color: $og-button-primary-text-color !important;
+  }
+}
+
+.og-button--secondary {
+  @extend .og-button;
+  color: $og-button-secondary-text-color;
+  background: $og-button-secondary-background-color;
+  @include og-border(thick, brand, solid);
+
+  path:last-child {
+    fill: og-color(text, secondary);
+  }
+
+  &:hover {
+    color: $og-button-secondary-text-color--hover !important;
+    background-color: $og-button-secondary-background-color--hover;
+    @include og-border(thick, brand, solid);
+  }
+
+  &:focus {
+    background-color: $og-button-secondary-background-color--focused;
+    @include og-border(thick, brand, solid);
+  }
+}
+
+.og-button--positive {
+  @extend .og-button;
+  color: $og-button-positive-text-color;
+  background: $og-button-positive-background-color;
+
+  path:last-child {
+    fill: og-color(text, positive);
+  }
+
+  &:hover {
+    background: $og-button-positive-background-color--hover;
+  }
+
+  &:focus {
+    background: $og-button-positive-background-color--focused;
+  }
+}
+
+.og-button--negative {
+  @extend .og-button;
+  color: $og-button-negative-text-color;
+  background: $og-button-negative-background-color;
+
+  path:last-child {
+    fill: og-color(text, negative);
+  }
+
+  &:hover {
+    background: $og-button-negative-background-color--hover;
+  }
+
+  &:focus {
+    background: $og-button-negative-background-color--focused;
+  }
+}
+
+.og-button--info {
+  @extend .og-button;
+  color: $og-button-info-text-color;
+  background: $og-button-info-background-color;
+
+  path:last-child {
+    fill: og-color(text, info);
+  }
+
+  &:hover {
+    background: $og-button-info-background-color--hover;
+  }
+
+  &:focus {
+    background: $og-button-info-background-color--focused;
+  }
+}
+
+.og-button--ghost {
+  @extend .og-button;
+  color: $og-button-ghost-text-color;
+  background: $og-button-ghost-background-color;
+  text-decoration: $og-button-ghost-text-style !important;
+  @include og-border(thin, primary, solid);
+
+  path:last-child {
+    fill: og-color(text, link);
+  }
+
+  &:hover {
+    background: $og-button-ghost-background-color--hover;
+  }
+
+  &:focus {
+    background: $og-button-ghost-background-color--focused;
+  }
+}
+
+.og-button--small {
+  padding: og-rem(6px) $og-space-16;
+  min-height: $og-space-32;
+  min-width: $og-space-32;
+  @include og-text-style-caption(semibold);
+}
+
+.og-button--medium {
+  padding: og-rem(14px) $og-space-16;
+  min-height: $og-space-40;
+  @include og-text-style-body1(semibold);
+}
+
+.og-button--fluid {
+  width: 100% !important;
+}
+
+
+// Circle Button
+
+.og-circle-button {
+  border-radius: og-shape(circle, default);
+  height: $og-space-48;
+  width: $og-space-48;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: $og-button-border;
+  transition: $og-button-transitions;
+  cursor: pointer;
+  white-space: normal;
+
+  &:hover, &:focus {
+    box-shadow: og-elevation(100);
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.og-circle-button--primary {
+  @extend .og-button;
+  color: $og-button-primary-text-color;
+  background: $og-button-primary-background-color;
+
+  &:hover {
+    background: $og-button-primary-background-color--hover;
+    color: $og-button-primary-text-color--hover !important;
+  }
+
+  &:focus, &:active {
+    background: $og-button-primary-background-color--focused;
+    color: $og-button-primary-text-color !important;
+  }
+}
+
+.og-circle-button--secondary {
+  @extend .og-button;
+  color: $og-button-secondary-text-color;
+  background: $og-button-secondary-background-color;
+  @include og-border(thick, brand, solid);
+
+  path:last-child {
+    fill: og-color(text, secondary);
+  }
+
+  &:hover {
+    color: $og-button-secondary-text-color--hover;
+    @include og-border(thick, brand, solid);
+
+    path:last-child {
+      fill: og-color(text, link) !important;
+    }
+  }
+
+  &:focus, &:active  {
+    color: $og-button-secondary-text-color--focused;
+    background-color: $og-button-secondary-background-color--focused;
+    @include og-border(thick, brand, solid);
+  }
+}
+
+.og-circle-button--positive {
+  @extend .og-button;
+  color: $og-button-positive-text-color;
+  background: $og-button-positive-background-color;
+
+  path:last-child {
+    fill: og-color(text, positive);
+  }
+
+  &:hover {
+    background: $og-button-positive-background-color--hover;
+  }
+
+  &:focus, &:active  {
+    background: $og-button-positive-background-color--focused;
+  }
+}
+
+.og-circle-button--negative {
+  @extend .og-button;
+  color: $og-button-negative-text-color;
+  background: $og-button-negative-background-color;
+
+  path:last-child {
+    fill: og-color(text, negative);
+  }
+
+  &:hover {
+    background: $og-button-negative-background-color--hover;
+  }
+
+  &:focus, &:active  {
+    background: $og-button-negative-background-color--focused;
+  }
+}
+
+.og-circle-button--info {
+  @extend .og-button;
+  color: $og-button-info-text-color;
+  background: $og-button-info-background-color;
+
+  path:last-child {
+    fill: og-color(text, info);
+  }
+
+  &:hover {
+    background: $og-button-info-background-color--hover;
+  }
+
+  &:focus, &:active  {
+    background: $og-button-info-background-color--focused;
+  }
+}
+
+.og-circle-button--ghost {
+  @extend .og-button;
+  color: $og-button-ghost-text-color;
+  background: $og-button-ghost-background-color;
+  @include og-border(thin, primary, solid);
+
+  path:last-child {
+    fill: og-color(text, link);
+  }
+
+  &:hover {
+    background: $og-button-ghost-background-color--hover;
+  }
+
+  &:focus, &:active  {
+    background: $og-button-ghost-background-color--focused;
+  }
+}
+
+.og-circle-button--small {
+  padding: og-rem(6px) $og-space-16;
+  min-height: $og-space-32;
+  min-width: $og-space-32;
+  @include og-text-style-caption(semibold);
+}
+
+.og-circle-button--medium {
+  padding: og-rem(14px) $og-space-24;
+  min-height: $og-space-40;
+  @include og-text-style-body1(semibold);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.og-button--circle-medium {
+  border-radius: 50%;
+  min-width: $og-space-48;
+  min-height: $og-space-48;
+
+  svg {
+    padding: 0;
+  }
+}
+
+.og-button--circle-small {
+  border-radius: 50%;
+  min-width: $og-space-32;
+  min-height: $og-space-32;
+
+  svg {
+    padding: 0;
+  }
+}
+
+.og-button--fab {
+  position: fixed;
+  bottom: $og-space-12;
+  right: $og-space-12;
+  z-index: 999;
+  height: og-rem(56px);
+  width: og-rem(56px);
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.20); // TODO: Change to token.
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .og-btn {
+//   height: ds-space(extra-loose);
+//   min-width: ds-space(extra-loose);
+//   transition: all ds-easing(base) ds-duration(base);
+//   border: none;
+//   box-sizing: border-box;
+//   padding: 0 ds-space(base);
+//   outline: none;
+  
+//   &:hover {
+//     box-shadow: ds-depth(100);
+//   }
+//  }
+
+// .og-btn-primary {
+//   background: $og-btn-primary-background-color;
+//   color: ds-color-contrast($og-btn-primary-background-color, $og-btn-primary-text-color-dark, $og-btn-primary-text-color-light);
+
+//   &:hover,
+//   &:focus {
+//     background: $og-btn-primary-background-color--hover;
+//   }
+
+//   &:focused {
+//     background: $og-btn-primary-background-color--focused;
+//     box-shadow: ds-depth(000);
+//   }
+// }
+
+// .og-btn-secondary {
+//   background: $og-btn-secondary-background-color;
+//   color: ds-color-contrast($og-btn-secondary-background-color, $og-btn-secondary-text-color-dark, $og-btn-secondary-text-color-light);
+
+//   &:hover,
+//   &:focus {
+//     background: $og-btn-secondary-background-color--hover;
+//   }
+
+//   &:focused {
+//     background: $og-btn-secondary-background-color--focused;
+//     box-shadow: ds-depth(000);
+//   }
+// }
+
+// .og-btn-success {
+//   background: $og-btn-success-background-color;
+//   color: ds-color-contrast($og-btn-success-background-color, $og-btn-success-text-color-dark, $og-btn-success-text-color-light);
+
+//   &:hover,
+//   &:focus {
+//     background: $og-btn-success-background-color--hover;
+//   }
+
+//   &:focused {
+//     background: $og-btn-success-background-color--focused;
+//     box-shadow: ds-depth(000);
+//   }
+// }
+
+// .og-btn-info {
+//   background: $og-btn-info-background-color;
+//   color: ds-color-contrast($og-btn-info-background-color, $og-btn-info-text-color-dark, $og-btn-info-text-color-light);
+
+//   &:hover,
+//   &:focus {
+//     background: $og-btn-info-background-color--hover;
+//   }
+
+//   &:focused {
+//     background: $og-btn-info-background-color--focused;
+//     box-shadow: ds-depth(000);
+//   }
+// }
+
+// .og-btn-danger {
+//   background: $og-btn-danger-background-color;
+//   color: ds-color-contrast($og-btn-danger-background-color, $og-btn-danger-text-color-dark, $og-btn-danger-text-color-light);
+
+//   &:hover,
+//   &:focus {
+//     background: $og-btn-danger-background-color--hover;
+//   }
+
+//   &:focused {
+//     background: $og-btn-danger-background-color--focused;
+//     box-shadow: ds-depth(000);
+//   }
+// }
+
+// .og-btn-ghost {
+//   background: $og-btn-ghost-background-color;
+//   color: $og-btn-ghost-text-color;
+//   border: 2px solid ds-color(primary, 400);
+
+//   &:hover,
+//   &:focus {
+//     background: $og-btn-ghost-background-color--hover;
+//     color: ds-color-contrast($og-btn-ghost-background-color--hover, $og-btn-ghost-text-color-dark, $og-btn-ghost-text-color-light);
+//   }
+
+//   &:focused {
+//     background: $og-btn-ghost-background-color--focused;
+//     color: ds-color-contrast($og-btn-ghost-background-color--focused, $og-btn-ghost-text-color-dark, $og-btn-ghost-text-color-light);
+//     box-shadow: ds-depth(000);
+//   }
+// }
+
+// .og-btn-small {
+//   min-width: 144px;
+//   max-width: 179px;
+// }
+
+// .og-btn-medium {
+//   max-width: 264px;
+//   min-width: 180px;
+// }
+
+// .og-btn-fluid {
+//   width: 100%;
+// }
+// // Success Button
+// $og-btn-success-background-color: ds-color(success, 400);
+// $og-btn-success-text-color-dark: ds-color(success, 600);
+// $og-btn-success-text-color-light: ds-color(neutral, 000);
+// $og-btn-success-background-color--hover: ds-color(success, 300);
+// $og-btn-success-background-color--focused: ds-color(success, 500);
+
+// // Info Button
+// $og-btn-info-background-color: ds-color(info, 400);
+// $og-btn-info-text-color-dark: ds-color(info, 600);
+// $og-btn-info-text-color-light: ds-color(neutral, 000);
+// $og-btn-info-background-color--hover: ds-color(info, 300);
+// $og-btn-info-background-color--focused: ds-color(info, 500);
+
+// // Danger Button
+// $og-btn-danger-background-color: ds-color(danger, 400);
+// $og-btn-danger-text-color-dark: ds-color(danger, 700);
+// $og-btn-danger-text-color-light: ds-color(neutral, 000);
+// $og-btn-danger-background-color--hover: ds-color(danger, 300);
+// $og-btn-danger-background-color--focused: ds-color(danger, 500);
+
+// // Ghost Button
+// $og-btn-ghost-background-color: transparent;
+// $og-btn-ghost-text-color: ds-color(primary, 400);
+// $og-btn-ghost-text-color-dark: ds-color(primary, 600);
+// $og-btn-ghost-text-color-light: ds-color(neutral, 000);
+// $og-btn-ghost-background-color--hover: ds-color(primary, 400);
+// $og-btn-ghost-background-color--focused: ds-color(primary, 500);
+
+
+// .og-btn {
+//   height: ds-space(extra-loose);
+//   min-width: ds-space(extra-loose);
+//   transition: all ds-easing(base) ds-duration(base);
+//   border-radius: $og-btn-border-radius;
+//   border: none;
+//   box-sizing: border-box;
+//   padding: 0 ds-space(base);
+//   outline: none;
+  
+//   &:hover {
+//     box-shadow: ds-depth(100);
+//   }
+//  }
+
+// .og-btn-primary {
+//   background: $og-btn-primary-background-color;
+//   color: ds-color-contrast($og-btn-primary-background-color, $og-btn-primary-text-color-dark, $og-btn-primary-text-color-light);
+
+//   &:hover,
+//   &:focus {
+//     background: $og-btn-primary-background-color--hover;
+//   }
+
+//   &:focused {
+//     background: $og-btn-primary-background-color--focused;
+//     box-shadow: ds-depth(000);
+//   }
+// }
+
+// .og-btn-secondary {
+//   background: $og-btn-secondary-background-color;
+//   color: ds-color-contrast($og-btn-secondary-background-color, $og-btn-secondary-text-color-dark, $og-btn-secondary-text-color-light);
+
+//   &:hover,
+//   &:focus {
+//     background: $og-btn-secondary-background-color--hover;
+//   }
+
+//   &:focused {
+//     background: $og-btn-secondary-background-color--focused;
+//     box-shadow: ds-depth(000);
+//   }
+// }
+
+// .og-btn-success {
+//   background: $og-btn-success-background-color;
+//   color: ds-color-contrast($og-btn-success-background-color, $og-btn-success-text-color-dark, $og-btn-success-text-color-light);
+
+//   &:hover,
+//   &:focus {
+//     background: $og-btn-success-background-color--hover;
+//   }
+
+//   &:focused {
+//     background: $og-btn-success-background-color--focused;
+//     box-shadow: ds-depth(000);
+//   }
+// }
+
+// .og-btn-info {
+//   background: $og-btn-info-background-color;
+//   color: ds-color-contrast($og-btn-info-background-color, $og-btn-info-text-color-dark, $og-btn-info-text-color-light);
+
+//   &:hover,
+//   &:focus {
+//     background: $og-btn-info-background-color--hover;
+//   }
+
+//   &:focused {
+//     background: $og-btn-info-background-color--focused;
+//     box-shadow: ds-depth(000);
+//   }
+// }
+
+// .og-btn-danger {
+//   background: $og-btn-danger-background-color;
+//   color: ds-color-contrast($og-btn-danger-background-color, $og-btn-danger-text-color-dark, $og-btn-danger-text-color-light);
+
+//   &:hover,
+//   &:focus {
+//     background: $og-btn-danger-background-color--hover;
+//   }
+
+//   &:focused {
+//     background: $og-btn-danger-background-color--focused;
+//     box-shadow: ds-depth(000);
+//   }
+// }
+
+// .og-btn-ghost {
+//   background: $og-btn-ghost-background-color;
+//   color: $og-btn-ghost-text-color;
+//   border: 2px solid ds-color(primary, 400);
+
+//   &:hover,
+//   &:focus {
+//     background: $og-btn-ghost-background-color--hover;
+//     color: ds-color-contrast($og-btn-ghost-background-color--hover, $og-btn-ghost-text-color-dark, $og-btn-ghost-text-color-light);
+//   }
+
+//   &:focused {
+//     background: $og-btn-ghost-background-color--focused;
+//     color: ds-color-contrast($og-btn-ghost-background-color--focused, $og-btn-ghost-text-color-dark, $og-btn-ghost-text-color-light);
+//     box-shadow: ds-depth(000);
+//   }
+// }
+
+// .og-btn-small {
+//   min-width: 144px;
+//   max-width: 179px;
+// }
+
+// .og-btn-medium {
+//   max-width: 264px;
+//   min-width: 180px;
+// }
+
+// .og-btn-fluid {
+//   width: 100%;
+// }

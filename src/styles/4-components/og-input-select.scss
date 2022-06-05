@@ -1,0 +1,49 @@
+@import '../0-base/_base-dir.scss';
+@import '../1-themes/_themes-dir.scss';
+@import '../2-foundations/_foundations-dir.scss';
+
+.og-input-select-container {
+  display: flex;
+  flex-direction: column;
+  margin: $og-space-16;
+  position: relative;
+
+  .og-input-label {
+    color: og-color(text, secondary);
+    margin-bottom: $og-space-04;
+  }
+
+  .og-input-field {
+    box-sizing: border-box;
+    background: white;
+    font-family: $og-theme-font-family;
+    border-radius: og-shape(primary, default);
+    border: og-rem(1px) og-color(border, primary-darker) solid;
+    min-height: $og-space-40 * 1.1;
+    padding: $og-space-08 $og-space-12;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+
+
+    &:focus {
+      outline: og-color(border, brand) og-rem(1px) solid;
+    }
+
+    &::placeholder {
+      color: og-color(text, placeholder);
+    }
+
+    &::-ms-expand {
+      display: none;
+    }
+  }
+
+  .og-select-chevron-down {
+    position: absolute;
+    color: og-color(text, link);
+    right: $og-space-12;
+    top: og-rem(38px);
+    pointer-events: none;
+  }
+}

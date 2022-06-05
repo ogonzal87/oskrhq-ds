@@ -1,0 +1,48 @@
+@import '../../0-base/_base-dir.scss';
+@import '../../1-themes/_themes-dir.scss';
+
+$og-shape-radius-small: og-rem(4px);
+$og-shape-radius-medium: og-rem(8px);
+$og-shape-radius-large: og-rem(16px);
+$og-shape-radius-xlarge: og-rem(24px);
+
+$og-shape-data: (
+  circle: (
+    default: 50%,
+    smaller-screen: null,
+    larger-screen: null
+  ),
+
+  squared: (
+    default: 0,
+    smaller-screen: null,
+    larger-screen: null
+  ),
+
+  primary: (
+    default: $og-shape-radius-small,
+    smaller-screen: $og-shape-radius-small,
+    larger-screen: $og-shape-radius-medium
+  ),
+
+  secondary: (
+    default: $og-shape-radius-medium,
+    smaller-screen: $og-shape-radius-small,
+    larger-screen: $og-shape-radius-large
+  ),
+
+  tertiary: (
+    default: $og-shape-radius-large,
+    smaller-screen: $og-shape-radius-medium,
+    larger-screen: $og-shape-radius-xlarge
+  ),
+
+  quaternary: (
+    default: $og-shape-radius-xlarge,
+    smaller-screen: $og-shape-radius-large,
+    larger-screen: $og-shape-radius-xlarge
+  ),
+) !default;
+
+
+

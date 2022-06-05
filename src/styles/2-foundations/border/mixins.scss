@@ -1,0 +1,4 @@
+
+@mixin og-border($width: thin, $color: primary, $type: solid) {
+  border: og-border-weight($width) og-color(border, $color) $type; 
+}

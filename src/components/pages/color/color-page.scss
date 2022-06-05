@@ -1,0 +1,535 @@
+// @import "../../../styles/_styles.scss";
+$specimen-on-dark-background: og-color(background, canvas-on-dark);
+
+.color-page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: og-space(space-16);
+  grid-row-gap: og-space(space-16);
+  justify-items: center;
+}
+
+.color-specimen {
+  padding: og-space(space-08);
+  @include og-text-style-caption();
+  @include og-align-vertically();
+  
+  p {
+    @include og-text-style-caption();
+    color: og-color(text, secondary);
+  }
+}
+
+//Backgrounds
+.background-brand {
+  path {
+    fill: og-color(background, brand);
+  }
+}
+.background-brand-focused {
+  path {
+    fill: og-color(background, brand-focused)
+  }
+}
+.background-brand-hover {
+  path {
+    fill: og-color(background, brand-hover)
+  }
+}
+.background-brand-on-dark {
+  background: $specimen-on-dark-background;
+  padding: $og-space-08;
+  path {
+    fill: og-color(background, brand-on-dark);
+  }
+}
+.background-brand-on-dark-focused {
+  background: $specimen-on-dark-background;
+  padding: $og-space-08;
+  path {
+    fill: og-color(background, brand-on-dark-focused)
+  }
+}
+.background-brand-on-dark-hover {
+  background: $specimen-on-dark-background;
+  padding: $og-space-08;
+  path {
+    fill: og-color(background, brand-on-dark-hover)
+  }
+}
+
+.background-positive {
+  path {
+    fill: og-color(background, positive);
+  }
+}
+.background-positive-focused {
+  path {
+    fill: og-color(background, positive-focused)
+  }
+}
+.background-positive-hover {
+  path {
+    fill: og-color(background, positive-hover)
+  }
+}
+.background-positive-on-dark {
+  background: $specimen-on-dark-background;
+  padding: $og-space-08;
+  path {
+    fill: og-color(background, positive-on-dark);
+  }
+}
+.background-positive-on-dark-focused {
+  background: $specimen-on-dark-background;
+  padding: $og-space-08;
+  path {
+    fill: og-color(background, positive-on-dark-focused)
+  }
+}
+
+.background-negative {
+  path {
+    fill: og-color(background, negative);
+  }
+}
+.background-negative-focused {
+  path {
+    fill: og-color(background, negative-focused)
+  }
+}
+.background-negative-hover {
+  path {
+    fill: og-color(background, negative-hover)
+  }
+}
+.background-negative-on-dark {
+  background: $specimen-on-dark-background;
+  padding: $og-space-08;
+  path {
+    fill: og-color(background, negative-on-dark);
+  }
+}
+.background-negative-on-dark-focused {
+  background: $specimen-on-dark-background;
+  padding: $og-space-08;
+  path {
+    fill: og-color(background, negative-on-dark-focused)
+  }
+}
+
+.background-info {
+  path {
+    fill: og-color(background, info);
+  }
+}
+.background-info-focused {
+  path {
+    fill: og-color(background, info-focused)
+  }
+}
+.background-info-hover {
+  path {
+    fill: og-color(background, info-hover)
+  }
+}
+.background-info-on-dark {
+  background: $specimen-on-dark-background;
+  padding: $og-space-08;
+  path {
+    fill: og-color(background, info-on-dark);
+  }
+}
+.background-info-on-dark-focused {
+  background: $specimen-on-dark-background;
+  padding: $og-space-08;
+  path {
+    fill: og-color(background, info-on-dark-focused)
+  }
+}
+
+
+
+
+.background-canvas {
+  path {
+    fill: og-color(background, canvas);
+    stroke: og-color(border, primary);
+  }
+}
+.background-canvas-tinted {
+  path {
+    fill: og-color(background, canvas-tinted)
+  }
+}
+.background-canvas-shaded {
+  path {
+    fill: og-color(background, canvas-shaded)
+  }
+}
+.background-app {
+  path {
+    fill: og-color(background, app);
+    stroke: og-color(border, primary);
+  }
+}
+
+
+.background-scrim {
+  path {
+    fill: og-color(background, scrim)
+  }
+}
+
+
+.background-canvas-on-dark {
+  background: og-color(background, app-on-dark);
+  padding: $og-space-08;
+  path {
+    fill: og-color(background, canvas-on-dark);
+  }
+}
+.background-canvas-tinted-on-dark {
+  background: $specimen-on-dark-background;
+  padding: $og-space-08;
+  path {
+    fill: og-color(background, canvas-tinted-on-dark);
+  }
+}
+.background-canvas-shaded-on-dark {
+  background: $specimen-on-dark-background;
+  padding: $og-space-08;
+  path {
+    fill: og-color(background, canvas-shaded-on-dark);
+  }
+}
+.background-app-on-dark {
+  background: $specimen-on-dark-background;
+  padding: $og-space-08;
+  path {
+    fill: og-color(background, app-on-dark);
+  }
+}
+
+
+
+// Text
+
+.color-specimen-text {
+  @include og-align-vertically();
+  color: og-color(text, secondary);
+  
+  h1 {
+    @include og-text-style-heading3(); 
+    margin-bottom: 0;
+  }
+}
+
+.text-primary {
+  color: og-color(text, primary);
+}
+.text-primary-focused {
+  
+}
+.text-primary-disabled {
+  color: og-color(text, primary-disabled);
+}
+.text-primary-on-dark {
+  color: og-color(text, primary-on-dark);
+  background: $specimen-on-dark-background;
+}
+.text-primary-on-dark-focused {
+  
+}
+.text-primary-on-dark-disabled {
+  color: og-color(text, primary-on-dark-disabled);
+  background: $specimen-on-dark-background;
+}
+.text-secondary {
+  color: og-color(text, secondary);
+}
+.text-secondary-focused {
+  
+}
+.text-secondary-disabled {
+  
+}
+.text-secondary-on-dark {
+  color: og-color(text, secondary-on-dark);
+  background: $specimen-on-dark-background;
+}
+.text-secondary-on-dark-focused {
+  
+}
+.text-secondary-on-dark-disabled {
+
+}
+
+.text-link {
+  color: og-color(text, link);
+}
+.text-link-focused {
+  color: og-color(text, link-focused);
+}
+
+.text-link-on-dark {
+  color: og-color(text, link-on-dark);
+  background: $specimen-on-dark-background;
+}
+.text-link-on-dark-focused {
+  color: og-color(text, link-on-dark-focused);
+  background: $specimen-on-dark-background;
+}
+.text-link-on-dark-disabled {
+
+}
+
+
+.text-negative {
+  color: og-color(text, negative);
+}
+.text-negative-focused {
+  color: og-color(text, negative-focused);
+  
+}
+.text-negative-disabled {
+  
+}
+.text-negative-on-dark {
+  color: og-color(text, negative-on-dark);
+  background: $specimen-on-dark-background;
+}
+.text-negative-on-dark-focused {
+  color: og-color(text, negative-on-dark-focused);
+  background: $specimen-on-dark-background;
+}
+.text-negative-on-dark-disabled {
+
+}
+
+
+.text-positive {
+  color: og-color(text, positive);
+}
+.text-positive-focused {
+  color: og-color(text, positive-focused);
+  
+}
+.text-positive-disabled {
+  
+}
+.text-positive-on-dark {
+  color: og-color(text, positive-on-dark);
+  background: $specimen-on-dark-background;
+}
+.text-positive-on-dark-focused {
+  color: og-color(text, positive-on-dark-focused);
+  background: $specimen-on-dark-background;
+}
+.text-positive-on-dark-disabled {
+
+}
+
+
+.text-info {
+  color: og-color(text, info);
+}
+.text-info-focused {
+  color: og-color(text, info-focused);
+  
+}
+.text-info-disabled {
+  
+}
+.text-info-on-dark {
+  color: og-color(text, info-on-dark);
+  background: $specimen-on-dark-background;
+}
+.text-info-on-dark-focused {
+  color: og-color(text, info-on-dark-focused);
+  background: $specimen-on-dark-background;
+}
+.text-info-on-dark-disabled {
+
+}
+
+
+
+// Borders
+.color-specimen-border {
+  @include og-align-vertically();
+  color: og-color(text, secondary);
+  border-radius: og-shape(secondary, default);
+}
+.border-specimen-on-dark {
+  padding: og-space(space-08); 
+  width: 100% !important;
+  height: 100% !important;
+  background: $specimen-on-dark-background;
+  @include og-text-style-caption();
+  @include og-center();
+
+  p{
+    color: og-color(text, primary-on-dark) !important;
+    margin-bottom: 0;
+  }
+}
+
+.border-primary {
+  width: $og-space-64;
+  height: $og-space-64;
+  @include og-border(thickest, primary, solid);
+  border-radius: og-shape(secondary, default);
+}
+.border-primary-darker {
+  width: $og-space-64;
+  height: $og-space-64;
+  @include og-border(thickest, primary-darker, solid);
+  border-radius: og-shape(secondary, default);
+}
+.border-primary-on-dark {
+  width: $og-space-64;
+  height: $og-space-64;
+  @include og-border(thickest, primary-on-dark, solid);
+  border-radius: og-shape(secondary, default);
+}
+
+.border-secondary {
+  width: $og-space-64;
+  height: $og-space-64;
+  @include og-border(thickest, secondary, solid);
+  border-radius: og-shape(secondary, default);
+}
+.border-secondary-on-dark {
+  width: $og-space-64;
+  height: $og-space-64;
+  @include og-border(thickest, secondary-on-dark, solid);
+  border-radius: og-shape(secondary, default);
+}
+
+.border-secondary {
+  width: $og-space-64;
+  height: $og-space-64;
+  @include og-border(thickest, secondary, solid);
+  border-radius: og-shape(secondary, default);
+}
+.border-secondary-on-dark {
+  width: $og-space-64;
+  height: $og-space-64;
+  @include og-border(thickest, secondary-on-dark, solid);
+  border-radius: og-shape(secondary, default);
+}
+
+.border-brand {
+  width: $og-space-64;
+  height: $og-space-64;
+  @include og-border(thickest, brand, solid);
+  border-radius: og-shape(secondary, default);
+}
+.border-brand-on-dark {
+  width: $og-space-64;
+  height: $og-space-64;
+  @include og-border(thickest,brand-on-dark, solid);
+  border-radius: og-shape(secondary, default);
+}
+
+
+
+//Icon
+.color-specimen-icon{
+  @include og-align-vertically;
+  width: 100%;
+  height: 100%; 
+  color: og-color(text, secondary);
+  padding: og-space(space-08);
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.icon-brand {
+  svg {
+    path{
+      fill: og-color(icon, brand);
+    }
+  }
+}
+.icon-brand-on-dark {
+  background: $specimen-on-dark-background;
+  color: og-color(text, primary-on-dark);
+
+  svg {
+    path{
+      fill: og-color(icon, brand-on-dark);
+    }
+  }
+}
+.icon-default {
+  svg {
+    path{
+      fill: og-color(icon, default);
+    }
+  }
+}
+.icon-default-on-dark {
+  background: $specimen-on-dark-background;
+  color: og-color(text, primary-on-dark);
+
+  svg {
+    path{
+      fill: og-color(icon, default-on-dark);
+    }
+  }
+}
+.icon-positive {
+  svg {
+    path{
+      fill: og-color(icon, positive);
+    }
+  }
+}
+.icon-positive-on-dark {
+  background: $specimen-on-dark-background;
+  color: og-color(text, primary-on-dark);
+
+  svg {
+    path{
+      fill: og-color(icon, positive-on-dark);
+    }
+  }
+}
+.icon-negative {
+  svg {
+    path{
+      fill: og-color(icon, negative);
+    }
+  }
+}
+.icon-negative-on-dark {
+  background: $specimen-on-dark-background;
+  color: og-color(text, primary-on-dark);
+
+  svg {
+    path{
+      fill: og-color(icon, negative-on-dark);
+    }
+  }
+}
+.icon-info {
+  svg {
+    path{
+      fill: og-color(icon, info);
+    }
+  }
+}
+.icon-info-on-dark {
+  background: $specimen-on-dark-background;
+  color: og-color(text, primary-on-dark);
+
+  svg {
+    path{
+      fill: og-color(icon, info-on-dark);
+    }
+  }
+}

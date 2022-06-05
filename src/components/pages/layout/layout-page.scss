@@ -1,0 +1,31 @@
+// @import "../../../styles/_styles.scss";
+
+.column-system-12-col {
+  @include og-grid(12);
+}
+
+.column-system-8-col {
+  @include og-grid(8)
+}
+
+.column-system-6-col {
+  @include og-grid(6)
+}
+
+.column-system-4-col {
+  @include og-grid(4)
+}
+
+.column-system-2-col {
+  @include og-grid(2)
+}
+
+.layout-page-container {
+  .column {
+    background: og-color(background, canvas-shaded);
+    height: og-space(space-80);
+    width: 100%;
+    @include og-border(thick, primary)
+  }
+}
+

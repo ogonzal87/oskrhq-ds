@@ -1,0 +1,13 @@
+/// Returns the shadow for the specified elevation
+/// @param {String} $elevation [base] - The shadow's elevation.
+/// @return {List} The shadow value.
+
+@function og-elevation($elevation: 100) {
+  $fetched-value: map-get($og-shadows-data, $elevation);
+
+  @if type-of($fetched-value) == list {
+    @return $fetched-value;
+  } @else {
+    @error 'Shadow variant `#{$elevation}` not found. Available variants: #{$og-shadows-data}';
+  }
+}

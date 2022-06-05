@@ -1,0 +1,119 @@
+// @import "../../../styles/_styles.scss";
+
+$balls-color1: og-color(background, brand2);
+$balls-color2: og-color(background, brand3);
+$balls-color3: og-color(background, brand);
+
+.og-motion-specimens-container {
+  display: flex;
+  flex-direction: column;
+  width: 774px;
+  justify-content: space-around;
+
+  .og-motion-specimen-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: dashed 1px og-color(border, primary);
+    border-radius: og-shape(secondary);
+    margin-bottom: $og-space-48;
+
+    .og-motion-specimen-code {
+      display: flex;
+      flex-direction: column;
+      width: 208px;
+    }
+
+    .og-motion-specimen {
+      margin-left: $og-space-16;
+      height: $og-space-48;
+      width: $og-space-48;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .1)
+    }
+
+    .og-motion-specimen-duration1 {
+      border: og-rem(2px) solid og-color(background, brand);
+      transition: all og-easing(base) og-duration(fast);
+      background: $balls-color1;
+    }
+
+    .og-motion-specimen-duration2 {
+      border: og-rem(2px) solid og-color(background, brand);
+      transition: all og-easing(base) og-duration(base);
+      background: $balls-color1;
+    }
+
+    .og-motion-specimen-duration3 {
+      border: og-rem(2px) solid og-color(background, brand);
+      transition: all og-easing(base) og-duration(slow);
+      background: $balls-color1;
+    }
+
+    .og-motion-specimen-duration4 {
+      border: og-rem(2px) solid og-color(background, brand);
+      transition: all og-easing(base) og-duration(slower);
+      background: $balls-color1;
+    }
+
+    .og-motion-specimen-duration5 {
+      border: og-rem(2px) solid og-color(background, brand);
+      transition: all og-easing(base) og-duration(slowest);
+      background: $balls-color1;
+    }
+
+    .og-motion-specimen-easing1 {
+      transition: all og-easing(base) (og-duration(slowest)*2);
+      background: $balls-color2;
+      border: og-rem(2px) solid og-color(background, brand)
+    }
+
+    .og-motion-specimen-easing2 {
+      border: og-rem(2px) solid og-color(background, brand);
+      transition: all og-easing(in) (og-duration(slowest)*2);
+      background: $balls-color2;
+    }
+
+    .og-motion-specimen-easing3 {
+      border: og-rem(2px) solid og-color(background, brand);
+      background: $balls-color2;
+      transition: all og-easing(out) (og-duration(slowest)*2);
+    }
+
+    .og-motion-specimen-easing4 {
+      border: og-rem(2px) solid og-color(background, brand);
+      background: $balls-color2;
+      transition: all og-easing(excite) (og-duration(slowest)*2);
+    }
+
+    .og-motion-specimen-easing5 {
+      border: og-rem(2px) solid og-color(background, brand);
+      background: $balls-color2;
+      transition: all og-easing(overshoot) (og-duration(slowest)*2);
+    }
+
+    .og-motion-specimen-easing6 {
+      border: og-rem(2px) solid og-color(background, brand);
+      background: $balls-color2;
+      transition: all og-easing(anticipate) (og-duration(slowest)*2);
+    }
+
+    .og-motion-specimen-delay1 {
+      border: og-rem(2px) solid og-color(background, brand3);
+      background: $balls-color3;
+      transition: transform og-easing(base) og-duration(slower);
+      transition-delay: og-delay(hurry);
+    }
+
+    .og-motion-specimen-delay2 {
+      border: og-rem(2px) solid og-color(background, brand3);
+      background: $balls-color3;
+      transition: transform og-easing(base) og-duration(slower);
+      transition-delay: og-delay(wait);
+    }
+  }
+
+  &:hover > .og-motion-specimen-container .og-motion-specimen {
+    transform: translateX(500px);
+  }
+}

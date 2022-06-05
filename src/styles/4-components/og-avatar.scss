@@ -1,0 +1,26 @@
+@import '../0-base/_base-dir.scss';
+@import '../1-themes/_themes-dir.scss';
+@import '../2-foundations/_foundations-dir.scss';
+
+.og-avatar {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  box-shadow: og-elevation(100);
+}
+
+.og-avatar-small {
+  height: 32px;
+  width: 32px;
+}
+
+.og-avatar-medium {
+  height: 64px;
+  width: 64px;
+}
+
+.og-avatar-large {
+  height: 104px;
+  width: 104px;
+}

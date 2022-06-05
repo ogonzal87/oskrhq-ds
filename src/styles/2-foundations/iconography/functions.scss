@@ -1,0 +1,13 @@
+/// Returns the ssize for the specified icon
+/// @param {String} $size [base] - The icon's size.
+/// @return {Number} The size value.
+
+@function og-icon-size($size: small) {
+  $fetched-value: map-get($og-iconography-size, $size);
+
+  @if type-of($fetched-value) == number {
+    @return $fetched-value;
+  } @else {
+    @error 'Shadow variant `#{$size}` not found. Available variants: #{$og-iconography-size}';
+  }
+}

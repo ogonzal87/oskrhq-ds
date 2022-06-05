@@ -1,0 +1,99 @@
+/**
+OSKRHQ.DS Demo Theme
+Hi! ðð¼  
+Below, you will find a theme I created to demonstrate the capabilities of the theming system.
+*/
+
+
+/**
+Color Palette
+Change these color values below to your brand colors.
+*/
+// Brand - Primary 
+$og-theme-color-primary-700: null;
+$og-theme-color-primary-600: null;
+$og-theme-color-primary-500: null;
+$og-theme-color-primary-400: #333333;
+$og-theme-color-primary-300: null;
+$og-theme-color-primary-200: null;
+$og-theme-color-primary-100: null;
+
+// Brand - Secondary 
+$og-theme-color-secondary-700: null;
+$og-theme-color-secondary-600: null;
+$og-theme-color-secondary-500: null;
+$og-theme-color-secondary-400: #EC407A;
+$og-theme-color-secondary-300: null;
+$og-theme-color-secondary-200: null;
+$og-theme-color-secondary-100: null;
+
+// Brand - Tertiary 
+$og-theme-color-tertiary-700: null;
+$og-theme-color-tertiary-600: null;
+$og-theme-color-tertiary-500: null;
+$og-theme-color-tertiary-400: null;
+$og-theme-color-tertiary-300: null;
+$og-theme-color-tertiary-200: null;
+$og-theme-color-tertiary-100: null;
+
+//Neutral - Used for text, borders, shadows, background, etc
+$og-theme-color-neutral-700: null;
+$og-theme-color-neutral-600: null;
+$og-theme-color-neutral-500: null;
+$og-theme-color-neutral-400: #C0C3C7;
+$og-theme-color-neutral-300: null;
+$og-theme-color-neutral-200: null;
+$og-theme-color-neutral-100: null;
+
+// Positive - Used to communicate status or feedback to the user 
+$og-theme-color-positive-700: null;
+$og-theme-color-positive-600: null;
+$og-theme-color-positive-500: null;
+$og-theme-color-positive-400: #35C873;
+$og-theme-color-positive-300: null;
+$og-theme-color-positive-200: null;
+$og-theme-color-positive-100: null;
+// Negative - Used to communicate status or feedback to the user
+$og-theme-color-negative-700: null;
+$og-theme-color-negative-600: null;
+$og-theme-color-negative-500: null;
+$og-theme-color-negative-400: #FF5656;
+$og-theme-color-negative-300: null;
+$og-theme-color-negative-200: null;
+$og-theme-color-negative-100: null;
+// Warning - Used to communicate status or feedback to the user
+$og-theme-color-warning-700: null;
+$og-theme-color-warning-600: null;
+$og-theme-color-warning-500: null;
+$og-theme-color-warning-400: #FEC541;
+$og-theme-color-warning-300: null;
+$og-theme-color-warning-200: null;
+$og-theme-color-warning-100: null;
+// Info - Used to communicate status or feedback to the user
+$og-theme-color-info-700: null;
+$og-theme-color-info-600: null;
+$og-theme-color-info-500: null;
+$og-theme-color-info-400: #4285F4;
+$og-theme-color-info-300: null;
+$og-theme-color-info-200: null;
+$og-theme-color-info-100: null;
+
+
+// **TYPOGRAPHY**
+// Typeface
+// Change the typeface.
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');
+$og-theme-font-family: 'IBM Plex Mono', monospace;
+$og-theme-base-font-size:    16px;
+
+
+// **SPACING**
+// Point-Grid System
+// Use multiples of this value to define dimensions, padding, and margin of both block and inline elements.
+$og-theme-base-point-grid: 8px; 
+// Learn more here: https://builttoadapt.io/intro-to-the-8-point-grid-system-d2573cde8632
+
+
+// **BORDER RADIUS**
+// How round would you like your containers to be?
+$og-theme-base-border-radius: 16px; 

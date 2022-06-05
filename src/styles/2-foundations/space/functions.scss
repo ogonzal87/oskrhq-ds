@@ -1,0 +1,79 @@
+
+/// Returns the spacing value for a given variant.
+///
+/// @param {String} $space - how much space do you need.
+/// @return {Number} The spacing for the variant in px.
+
+@function og-space($space: $space-08) {
+  $fetched-value: map-get($og-spacing-data, $space);
+
+  @if type-of($fetched-value) == number {
+    @return $fetched-value;
+  } @else {
+    @error 'Spacing variant `#{$space}` not found. Available variants: #{$og-spacing-data}';
+  }
+}
+
+
+/// Returns the spacing value for a given variant.
+///
+/// @param {String} $item-spacing - how much space do you need.
+/// @return {Number} The spacing for the variant in px.
+
+
+@function og-container-inset($type: m, $space: default) {
+  $fetched-space: map-get(map-get($og-container-inset, $type), $space);
+
+  @if map-has-key($og-container-inset, $fetched-space) {
+    $fetched-space: map-get(map-get($og-container-inset, $fetched-space), $space);
+  }
+
+  @return $fetched-space;
+
+
+  // @if type-of($fetched-space) == color {
+  //   @return $fetched-space;
+  // } @else {
+  //   @error 'Space `#{$type} - #{$space}` not found. Available space units: #{$og-container-inset}';
+  // }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/// Returns the spacing value for a given variant.
+///
+/// @param {String} $item-spacing - how much space do you need.
+/// @return {Number} The spacing for the variant in px.
+
+// @function og-container-inset($item-spacing: base) {
+//   $fetched-value: map-get($og-container-inset, $item-spacing);
+
+//   @return $fetched-value;
+
+//   @if type-of($fetched-value) == number {
+//     @return $fetched-value;
+//   } @else {
+//     @error 'Spacing variant `#{$item-spacing}` not found. Available variants: #{$og-container-inset}';
+//   }
+// }

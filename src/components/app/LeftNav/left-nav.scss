@@ -1,0 +1,74 @@
+.left-nav {
+  grid-area: left-nav;
+  max-width: 280px;
+  background: og-color(background, canvas);
+  padding: og-space(space-48) og-space(space-40);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transition: all 0.2s ease-out;
+  overflow-y: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .og-logo {
+    max-width: 90%;
+    margin-bottom: og-space(space-40);
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: og-space(space-24);
+
+    a {
+      text-decoration: none;
+      font-size: og-font-size(heading6);
+      color: og-color(text, secondary);
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .nav-link-isfocused {
+    color: og-color(text, primary);
+    font-weight: bold;
+  }
+
+  .left-nav-component-anchor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .leftnav-subnav-list {
+    padding: og-space(space-16) 0 0 og-space(space-32);
+    display: none;
+    opacity: 0;
+    transition: all og-easing(base) og-duration(slow);
+
+    li {
+      a {
+        font-size: calc(og-space(space-16) * 1.125);
+      }
+    }
+  }
+
+  .leftnav-subnav-list-is-showing {
+    display: block;
+    opacity: 1;
+  }
+}

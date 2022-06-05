@@ -1,0 +1,109 @@
+@import '../../0-base/_base-dir.scss';
+@import '../../1-themes/_themes-dir.scss';
+
+/* ////////////////////////
+Public Colors - Colors that are available to Developers.
+*/ ////////////////////////
+$og-color-data: (
+  background: (
+    brand: $og-theme-color-primary-40,
+    brand2: $og-theme-color-secondary-70,
+    brand3: $og-theme-color-tertiary-70,
+    brand-focused: $og-theme-color-primary-50,
+    brand-hover: $og-theme-color-primary-30,
+
+    brand-on-dark: $og-theme-color-primary-30,
+    brand-on-dark-focused: $og-theme-color-primary-40,
+    brand-on-dark-hover: $og-theme-color-primary-20,
+
+    canvas: $og-theme-color-neutral-10, // Sections and most panels
+    canvas-tinted: $og-theme-color-neutral-20, // alternate for Sections and most panels
+    canvas-shaded: $og-theme-color-neutral-30, // alternate for Sections and most panels
+    app: #F9FAFC, //  application background on light
+
+    canvas-on-dark: #292E56, // Sections and most panels
+    canvas-tinted-on-dark: $og-theme-color-neutral-70, // alternate for Sections and most panels
+    canvas-shaded-on-dark: #000, // alternate for Sections and most panels
+    app-on-dark: #202442, //  application background on dark
+
+    scrim: rgba($og-theme-color-neutral-70, .75), // Applied behind Surface for blocking sheets/modals
+
+    positive: $og-theme-color-positive-50,
+    positive-on-dark: $og-theme-color-positive-20,
+    positive-focused: $og-theme-color-positive-70,
+    positive-hover: $og-theme-color-positive-40,
+    positive-on-dark-focused: $og-theme-color-positive-40,
+
+    negative: $og-theme-color-negative-40,
+    negative-on-dark: $og-theme-color-negative-20,
+    negative-focused: $og-theme-color-negative-60,
+    negative-hover: $og-theme-color-negative-30,
+    negative-on-dark-focused: $og-theme-color-negative-30,
+
+    info: $og-theme-color-info-40,
+    info-on-dark: $og-theme-color-info-10,
+    info-focused: $og-theme-color-info-50,
+    info-hover: $og-theme-color-info-30,
+    info-on-dark-focused: $og-theme-color-info-30,
+  ),
+
+  text: (
+    primary: $og-theme-color-neutral-70,
+    primary-disabled: $og-theme-color-neutral-40,
+    primary-on-dark: $og-theme-color-neutral-20, // For most text
+    primary-on-dark-disabled: $og-theme-color-neutral-40,
+
+    secondary: $og-theme-color-neutral-50, // For captions/metadata/asides
+    secondary-on-dark: $og-theme-color-neutral-40, // For most text
+
+    placeholder: $og-theme-color-neutral-40,
+
+    link: $og-theme-color-primary-40, // Set up to defualt to brand color to be able to adjust in a unified way
+    link-on-dark: $og-theme-color-primary-10,
+    link-focused: $og-theme-color-primary-60,
+    link-hover: $og-theme-color-primary-30,
+    link-on-dark-focused: $og-theme-color-primary-30,
+
+    positive: $og-theme-color-positive-50,
+    positive-on-dark: $og-theme-color-positive-20,
+    positive-focused: $og-theme-color-positive-70,
+    positive-on-dark-focused: $og-theme-color-positive-40,
+
+    negative: $og-theme-color-negative-40,
+    negative-on-dark: $og-theme-color-negative-20,
+    negative-focused: $og-theme-color-negative-60,
+    negative-on-dark-focused: $og-theme-color-negative-30,
+
+    info: $og-theme-color-info-40,
+    info-on-dark: $og-theme-color-info-10,
+    info-focused: $og-theme-color-info-50,
+    info-on-dark-focused: $og-theme-color-info-30,
+  ),
+
+  border: (
+    primary: $og-theme-color-neutral-30,
+    primary-darker: $og-theme-color-neutral-60,
+    primary-on-dark: $og-theme-color-neutral-10,
+
+    secondary: $og-theme-color-neutral-20,
+    secondary-on-dark: $og-theme-color-neutral-50,
+
+    brand: $og-theme-color-primary-40,
+    brand-on-dark: $og-theme-color-primary-10,
+  ),
+
+  icon: (
+    brand: $og-theme-color-primary-40,
+    brand-on-dark: $og-theme-color-primary-30,
+    default: $og-theme-color-neutral-70,
+    default-on-dark: $og-theme-color-neutral-10,
+    positive: $og-theme-color-positive-50,
+    positive-on-dark: $og-theme-color-positive-20,
+    negative: $og-theme-color-negative-40,
+    negative-on-dark: $og-theme-color-negative-20,
+    info:  $og-theme-color-info-40,
+    info-on-dark:  $og-theme-color-info-20,
+  ),
+
+) !default;
+

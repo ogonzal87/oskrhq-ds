@@ -1,0 +1,84 @@
+@import '../0-base/_base-dir.scss';
+@import '../1-themes/_themes-dir.scss';
+@import '../2-foundations/_foundations-dir.scss';
+
+.og-text-style-heading1 {
+  @include og-text-style-heading1();
+}
+
+.og-text-style-heading2 {
+  @include og-text-style-heading2();
+}
+
+.og-text-style-heading3 {
+  @include og-text-style-heading3();
+}
+
+.og-text-style-heading4 {
+  @include og-text-style-heading4();
+}
+
+.og-text-style-heading5 {
+  @include og-text-style-heading5();
+}
+
+.og-text-style-heading6 {
+  @include og-text-style-heading6();
+}
+
+.og-text-style-subtitle2 {
+  @include og-text-style-subtitle2();
+}
+
+.og-text-style-subtitle1 {
+  @include og-text-style-subtitle1();
+}
+
+.og-text-style-body2 {
+  @include og-text-style-body2();
+}
+
+.og-text-style-body1 {
+  @include og-text-style-body1();
+}
+
+.og-text-style-caption {
+  @include og-text-style-caption();
+}
+
+.og-text-style-overline {
+  @include og-text-style-overline();
+}
+
+.og-text-style-link {
+  @include og-text-style-link();
+}
+
+.og-text-style-list {
+  @include og-text-style-list();
+}
+
+a {
+  @include og-text-style-link();
+  color: og-color(text, link);
+}
+
+h1 {
+  @include og-text-style-heading1(); 
+}
+
+h2 {
+  @include og-text-style-heading2(); 
+}
+
+h3 {
+  @include og-text-style-heading3(); 
+}
+
+h4 {
+  @include og-text-style-heading4(); 
+}
+
+p {
+  @include og-text-style-body1();
+}

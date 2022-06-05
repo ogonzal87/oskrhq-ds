@@ -1,0 +1,107 @@
+$app-background-color: og-color(background, canvas);
+$og-base-text-color: og-color(text, primary);
+$og-brand-text-color: og-color(text, link);
+$og-secondary-text-color: og-color(text, secondary);
+$og-base-link-text-color: $og-brand-text-color;
+$left-nav-width: 280px;
+$content-bg-color: og-color(background, app);
+
+:root {
+  font-family: $og-theme-font-family;
+  font-size: $og-text-base-font-size;
+}
+
+html {
+  font-family: $og-theme-font-family;
+  background-color: $app-background-color;
+  color: $og-base-text-color;
+}
+
+a {
+  color: $og-base-link-text-color;
+  text-decoration: none;
+  font-weight: og-font-weight(bold) !important;
+
+  &:hover {
+    text-decoration: line-through;
+  }
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: $left-nav-width 1fr;
+  grid-template-areas: "left-nav    main-content";
+  grid-gap: 0;
+
+  .og-col-container {
+    .og-col-1:first-child {
+      margin-left: 20px;
+    }
+    .og-col-2:first-child {
+      margin-left: 20px;
+    }
+    .og-col-3:first-child {
+      margin-left: 20px;
+    }
+    .og-col-4:first-child {
+      margin-left: 20px;
+    }
+    .og-col-5:first-child {
+      margin-left: 20px;
+    }
+    .og-col-6:first-child {
+      margin-left: 20px;
+    }
+    .og-col-7:first-child {
+      margin-left: 20px;
+    }
+    .og-col-8:first-child {
+      margin-left: 20px;
+    }
+    .og-col-9:first-child {
+      margin-left: 20px;
+    }
+    .og-col-10:first-child {
+      margin-left: 20px;
+    }
+    .og-col-11:first-child {
+      margin-left: 20px;
+    }
+    .og-col-12:first-child {
+      margin-left: 20px;
+    }
+  }
+}
+
+.main-content {
+  grid-area: main-content;
+  background: $content-bg-color;
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  padding-bottom: $og-space-96;
+}
+
+.container {
+  max-width: 960px;
+  padding: $og-space-48 0 300px 60px;
+}
+
+.subheading {
+  width: 680px;
+  margin-bottom: 100px;
+  margin-top: 0;
+  line-height: 43px;
+  font-weight: 300;
+  width: 680px;
+  @include og-text-style-heading4();
+  margin-top: -og-space(space-16);
+  line-height: 1.1;
+  font-weight: og-font-weight(light);
+  color: og-color(text, secondary);
+}
+
+pre {
+  margin-top: $og-space-32 !important;
+}

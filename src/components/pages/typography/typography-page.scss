@@ -1,0 +1,57 @@
+// @import "../../../styles/_styles.scss";
+
+.typography-specimen {
+  width: 500px;
+  color: og-color(text, primary);
+  margin: 0 0 og-space(space-32) 0;
+  word-wrap: break-word;
+
+  @include og-text-style-heading4();
+  line-height: 1.2;
+}
+
+.typography-type-sample {
+  font-weight: 400;
+  width: 460px;
+  margin-bottom: og-space(space-96);
+}
+
+.typography-type-syles-definition-container {
+  display: flex;
+  flex-direction: column;
+
+  .typography-type-syles-definition {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: og-space(space-48);
+
+    .typography-caption-secondary {
+      color: og-color(text, secondary);
+    }
+  }
+}
+
+p {
+  max-width: 64ch;
+}
+
+strong {
+  font-weight: og-font-weight(bold);
+}
+
+.wrapper-on-dark {
+  padding: og-space(space-16);
+  background-color: og-color(background, canvas-on-dark);
+
+  span {
+    color: og-color(text, primary-on-dark);
+  }
+
+  .typography-type-syles-definition-container {
+    .typography-type-syles-definition {
+      .typography-caption-secondary {
+        color: og-color(text, secondary-on-dark);
+      }
+    }
+  }
+}
