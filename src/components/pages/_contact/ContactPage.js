@@ -33,7 +33,7 @@ const Contact = () => (
       >
         For more info about this Design System and others I have created, hit me
         up at{" "}
-        <a href="mailto:osk.gonzo@gmail.com?Subject=Hello!" target="_top">
+        <a href="mailto:osk.gonzo@gmail.com?Subject=Hola!" target="_blank">
           osk.gonzo@gmail.com
         </a>
         . I love to geek out about this stuff.

@@ -242,8 +242,8 @@ class TypographyPage extends React.Component {
             sass functions; <code>og-font-size()</code>,{" "}
             <code>og-font-weight()</code>, <code>og-line-height()</code>, and{" "}
             <code>og-color()</code>. When creating your own combination, keep in
-            mind that these have to complement each other, specially line-height
-            and font-size.
+            mind that these have to complement each other, especially
+            line-height and font-size.
           </p>
 
           <pre>
