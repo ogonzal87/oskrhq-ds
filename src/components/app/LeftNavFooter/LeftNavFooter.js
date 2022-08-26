@@ -7,7 +7,7 @@ const DSLeftNavFooter = () => (
   <div className="leftnav-footer-wrapper">
     <div className="leftnav-resources-container">
       <a
-        href="https://www.figma.com/file/z76YKa3fuhJukaWTvEBxjV/OSKR.DS?node-id=0%3A1"
+        href="https://www.figma.com/community/file/1145046603908672649"
         target="_blank"
         rel="noopener noreferrer"
         className="leftnav-resource"
